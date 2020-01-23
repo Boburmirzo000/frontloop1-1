@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   src:url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"), 
-       url("../fonts/roboto-v20-latin-regular.woff") format("woff"); 
+  url("../fonts/roboto-v20-latin-regular.woff") format("woff"); 
 }
 @font-face {
   font-family: "Roboto";
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 500;
   src:url("../fonts/roboto-v20-latin-500.woff2") format("woff2"), 
-       url("../fonts/roboto-v20-latin-500.woff") format("woff"); 
+  url("../fonts/roboto-v20-latin-500.woff") format("woff"); 
 }
 @font-face {
   font-family: "Roboto";
@@ -20,5 +20,59 @@
   font-style: normal;
   font-weight: 700;
   src:url("../fonts/roboto-v20-latin-700.woff2") format("woff2"),
-       url("../fonts/roboto-v20-latin-700.woff") format("woff"); 
+  url("../fonts/roboto-v20-latin-700.woff") format("woff"); 
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Roboto", "Arial", sans-serif;
+  background-color: rgba(133, 165, 212, 1);
+}
+.device_info{
+  max-width: 600px;
+  display: flex;
+  padding: 15px;
+  margin: 50px auto 0;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 2px #555;
+}
+.device_wrapper{
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 20px;
+  margin: 1px;
+  border-radius: 5px;
+}
+.device-img{
+  width: 50px;
+  height: 50px;
+}
+.device_link-heading a{
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4B59C1;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.device_link-text{
+  text-align: center;
+  font-size: 10px;
+  word-spacing: 2px;
+  margin: 0;
+  color:#555;
+}
+.price_box *{
+  display: inline-block;
+  vertical-align: middle;
+  color: #4B59C1;
+  font-weight: 700;
+}
+.price_box p{
+  font-size: 18px;
 }
